@@ -1,0 +1,687 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "System Admin",
+      "email": "admin@parkease.com",
+      "password": "admin123",
+      "phone": "+91 9876543210",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Rahul Sharma",
+      "email": "rahul@example.com",
+      "password": "user123",
+      "phone": "+91 9123456789",
+      "role": "user"
+    },
+    {
+      "name": "poojitha",
+      "email": "poojitha@2gmail.com",
+      "phone": "+917670828453",
+      "password": "Poojitha@123",
+      "role": "user",
+      "id": "kTRJl7LLiv4"
+    }
+  ],
+  "parkingLots": [
+    {
+      "id": "1",
+      "name": "City Center Parking",
+      "location": "Main Street, Downtown",
+      "totalSlots": 15,
+      "availableSlots": 6,
+      "pricePerHour": 40,
+      "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80",
+      "openingHours": "06:00 AM - 11:00 PM",
+      "description": "Multi-level parking facility located at the heart of the city center with 24/7 surveillance and EV charging spots."
+    },
+    {
+      "id": "2",
+      "name": "Grand Mall Parking",
+      "location": "Westside Boulevard, Sector 4",
+      "totalSlots": 15,
+      "availableSlots": 8,
+      "pricePerHour": 50,
+      "image": "https://images.unsplash.com/photo-1590674899484-d5640e854abe?auto=format&fit=crop&w=800&q=80",
+      "openingHours": "08:00 AM - 10:00 PM",
+      "description": "Spacious underground parking directly connected to Grand Shopping Mall with valet service available."
+    },
+    {
+      "id": "3",
+      "name": "Metro Airport Terminal 2",
+      "location": "Airport Expressway, Gate 3",
+      "totalSlots": 15,
+      "availableSlots": 9,
+      "pricePerHour": 80,
+      "image": "https://images.unsplash.com/photo-1573348722427-f1d6819fdf98?auto=format&fit=crop&w=800&q=80",
+      "openingHours": "24 Hours Open",
+      "description": "Premium long-term and short-term airport parking with express shuttle service and automated slot guidance."
+    },
+    {
+      "id": "4",
+      "name": "Business District Hub",
+      "location": "Tech Avenue, Cyber City",
+      "totalSlots": 15,
+      "availableSlots": 6,
+      "pricePerHour": 60,
+      "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?auto=format&fit=crop&w=800&q=80",
+      "openingHours": "07:00 AM - 09:00 PM",
+      "description": "Modern covered parking structure for corporate professionals with reserved monthly & daily slot options."
+    }
+  ],
+  "parkingSlots": [
+    {
+      "id": "slot-1-A01",
+      "parkingId": "1",
+      "slotNumber": "A01",
+      "type": "Car",
+      "status": "Reserved",
+      "floor": "Ground Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-A02",
+      "parkingId": "1",
+      "slotNumber": "A02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Ground Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-A03",
+      "parkingId": "1",
+      "slotNumber": "A03",
+      "type": "Car",
+      "status": "Reserved",
+      "floor": "Ground Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-A04",
+      "parkingId": "1",
+      "slotNumber": "A04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Ground Floor",
+      "price": 20
+    },
+    {
+      "id": "slot-1-A05",
+      "parkingId": "1",
+      "slotNumber": "A05",
+      "type": "SUV",
+      "status": "Available",
+      "floor": "Ground Floor",
+      "price": 50
+    },
+    {
+      "id": "slot-1-B01",
+      "parkingId": "1",
+      "slotNumber": "B01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "1st Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-B02",
+      "parkingId": "1",
+      "slotNumber": "B02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "1st Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-B03",
+      "parkingId": "1",
+      "slotNumber": "B03",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "1st Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-B04",
+      "parkingId": "1",
+      "slotNumber": "B04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "1st Floor",
+      "price": 20
+    },
+    {
+      "id": "slot-1-B05",
+      "parkingId": "1",
+      "slotNumber": "B05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "1st Floor",
+      "price": 50
+    },
+    {
+      "id": "slot-1-C01",
+      "parkingId": "1",
+      "slotNumber": "C01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "2nd Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-C02",
+      "parkingId": "1",
+      "slotNumber": "C02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "2nd Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-C03",
+      "parkingId": "1",
+      "slotNumber": "C03",
+      "type": "Car",
+      "status": "Reserved",
+      "floor": "2nd Floor",
+      "price": 40
+    },
+    {
+      "id": "slot-1-C04",
+      "parkingId": "1",
+      "slotNumber": "C04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "2nd Floor",
+      "price": 20
+    },
+    {
+      "id": "slot-1-C05",
+      "parkingId": "1",
+      "slotNumber": "C05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "2nd Floor",
+      "price": 50
+    },
+    {
+      "id": "slot-2-A01",
+      "parkingId": "2",
+      "slotNumber": "A01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 1",
+      "price": 50
+    },
+    {
+      "id": "slot-2-A02",
+      "parkingId": "2",
+      "slotNumber": "A02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Basement 1",
+      "price": 50
+    },
+    {
+      "id": "slot-2-A03",
+      "parkingId": "2",
+      "slotNumber": "A03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 1",
+      "price": 50
+    },
+    {
+      "id": "slot-2-A04",
+      "parkingId": "2",
+      "slotNumber": "A04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Basement 1",
+      "price": 30
+    },
+    {
+      "id": "slot-2-A05",
+      "parkingId": "2",
+      "slotNumber": "A05",
+      "type": "SUV",
+      "status": "Reserved",
+      "floor": "Basement 1",
+      "price": 60
+    },
+    {
+      "id": "slot-2-B01",
+      "parkingId": "2",
+      "slotNumber": "B01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 2",
+      "price": 50
+    },
+    {
+      "id": "slot-2-B02",
+      "parkingId": "2",
+      "slotNumber": "B02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Basement 2",
+      "price": 50
+    },
+    {
+      "id": "slot-2-B03",
+      "parkingId": "2",
+      "slotNumber": "B03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 2",
+      "price": 50
+    },
+    {
+      "id": "slot-2-B04",
+      "parkingId": "2",
+      "slotNumber": "B04",
+      "type": "Bike",
+      "status": "Occupied",
+      "floor": "Basement 2",
+      "price": 30
+    },
+    {
+      "id": "slot-2-B05",
+      "parkingId": "2",
+      "slotNumber": "B05",
+      "type": "SUV",
+      "status": "Available",
+      "floor": "Basement 2",
+      "price": 60
+    },
+    {
+      "id": "slot-2-C01",
+      "parkingId": "2",
+      "slotNumber": "C01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 3",
+      "price": 50
+    },
+    {
+      "id": "slot-2-C02",
+      "parkingId": "2",
+      "slotNumber": "C02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Basement 3",
+      "price": 50
+    },
+    {
+      "id": "slot-2-C03",
+      "parkingId": "2",
+      "slotNumber": "C03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Basement 3",
+      "price": 50
+    },
+    {
+      "id": "slot-2-C04",
+      "parkingId": "2",
+      "slotNumber": "C04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Basement 3",
+      "price": 30
+    },
+    {
+      "id": "slot-2-C05",
+      "parkingId": "2",
+      "slotNumber": "C05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "Basement 3",
+      "price": 60
+    },
+    {
+      "id": "slot-3-A01",
+      "parkingId": "3",
+      "slotNumber": "A01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 1",
+      "price": 80
+    },
+    {
+      "id": "slot-3-A02",
+      "parkingId": "3",
+      "slotNumber": "A02",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 1",
+      "price": 80
+    },
+    {
+      "id": "slot-3-A03",
+      "parkingId": "3",
+      "slotNumber": "A03",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Terminal Level 1",
+      "price": 80
+    },
+    {
+      "id": "slot-3-A04",
+      "parkingId": "3",
+      "slotNumber": "A04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Terminal Level 1",
+      "price": 40
+    },
+    {
+      "id": "slot-3-A05",
+      "parkingId": "3",
+      "slotNumber": "A05",
+      "type": "SUV",
+      "status": "Available",
+      "floor": "Terminal Level 1",
+      "price": 100
+    },
+    {
+      "id": "slot-3-B01",
+      "parkingId": "3",
+      "slotNumber": "B01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 2",
+      "price": 80
+    },
+    {
+      "id": "slot-3-B02",
+      "parkingId": "3",
+      "slotNumber": "B02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Terminal Level 2",
+      "price": 80
+    },
+    {
+      "id": "slot-3-B03",
+      "parkingId": "3",
+      "slotNumber": "B03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 2",
+      "price": 80
+    },
+    {
+      "id": "slot-3-B04",
+      "parkingId": "3",
+      "slotNumber": "B04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Terminal Level 2",
+      "price": 40
+    },
+    {
+      "id": "slot-3-B05",
+      "parkingId": "3",
+      "slotNumber": "B05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "Terminal Level 2",
+      "price": 100
+    },
+    {
+      "id": "slot-3-C01",
+      "parkingId": "3",
+      "slotNumber": "C01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 3",
+      "price": 80
+    },
+    {
+      "id": "slot-3-C02",
+      "parkingId": "3",
+      "slotNumber": "C02",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Terminal Level 3",
+      "price": 80
+    },
+    {
+      "id": "slot-3-C03",
+      "parkingId": "3",
+      "slotNumber": "C03",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Terminal Level 3",
+      "price": 80
+    },
+    {
+      "id": "slot-3-C04",
+      "parkingId": "3",
+      "slotNumber": "C04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Terminal Level 3",
+      "price": 40
+    },
+    {
+      "id": "slot-3-C05",
+      "parkingId": "3",
+      "slotNumber": "C05",
+      "type": "SUV",
+      "status": "Reserved",
+      "floor": "Terminal Level 3",
+      "price": 100
+    },
+    {
+      "id": "slot-4-A01",
+      "parkingId": "4",
+      "slotNumber": "A01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Executive Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-A02",
+      "parkingId": "4",
+      "slotNumber": "A02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Executive Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-A03",
+      "parkingId": "4",
+      "slotNumber": "A03",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Executive Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-A04",
+      "parkingId": "4",
+      "slotNumber": "A04",
+      "type": "Bike",
+      "status": "Available",
+      "floor": "Executive Floor",
+      "price": 30
+    },
+    {
+      "id": "slot-4-A05",
+      "parkingId": "4",
+      "slotNumber": "A05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "Executive Floor",
+      "price": 80
+    },
+    {
+      "id": "slot-4-B01",
+      "parkingId": "4",
+      "slotNumber": "B01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Standard Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-B02",
+      "parkingId": "4",
+      "slotNumber": "B02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "Standard Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-B03",
+      "parkingId": "4",
+      "slotNumber": "B03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "Standard Floor",
+      "price": 60
+    },
+    {
+      "id": "slot-4-B04",
+      "parkingId": "4",
+      "slotNumber": "B04",
+      "type": "Bike",
+      "status": "Occupied",
+      "floor": "Standard Floor",
+      "price": 30
+    },
+    {
+      "id": "slot-4-B05",
+      "parkingId": "4",
+      "slotNumber": "B05",
+      "type": "SUV",
+      "status": "Occupied",
+      "floor": "Standard Floor",
+      "price": 80
+    },
+    {
+      "id": "slot-4-C01",
+      "parkingId": "4",
+      "slotNumber": "C01",
+      "type": "Car",
+      "status": "Available",
+      "floor": "VIP Section",
+      "price": 60
+    },
+    {
+      "id": "slot-4-C02",
+      "parkingId": "4",
+      "slotNumber": "C02",
+      "type": "Car",
+      "status": "Occupied",
+      "floor": "VIP Section",
+      "price": 60
+    },
+    {
+      "id": "slot-4-C03",
+      "parkingId": "4",
+      "slotNumber": "C03",
+      "type": "Car",
+      "status": "Available",
+      "floor": "VIP Section",
+      "price": 60
+    },
+    {
+      "id": "slot-4-C04",
+      "parkingId": "4",
+      "slotNumber": "C04",
+      "type": "Bike",
+      "status": "Occupied",
+      "floor": "VIP Section",
+      "price": 30
+    },
+    {
+      "id": "slot-4-C05",
+      "parkingId": "4",
+      "slotNumber": "C05",
+      "type": "SUV",
+      "status": "Reserved",
+      "floor": "VIP Section",
+      "price": 80
+    }
+  ],
+  "reservations": [
+    {
+      "id": "PK001",
+      "userId": "2",
+      "userName": "Rahul Sharma",
+      "userPhone": "+91 9123456789",
+      "parkingId": "1",
+      "parkingName": "City Center Parking",
+      "slotId": "slot-1-A03",
+      "slotNumber": "A03",
+      "vehicleNumber": "TS09AB1234",
+      "vehicleType": "Car",
+      "entryTime": "10:30",
+      "duration": 2,
+      "status": "Active",
+      "totalAmount": 80,
+      "createdAt": "2026-09-01T10:30:00.000Z"
+    },
+    {
+      "id": "PK002",
+      "userId": "2",
+      "userName": "Rahul Sharma",
+      "userPhone": "+91 9123456789",
+      "parkingId": "2",
+      "parkingName": "Grand Mall Parking",
+      "slotId": "slot-2-A05",
+      "slotNumber": "A05",
+      "vehicleNumber": "TS07CD5678",
+      "vehicleType": "SUV",
+      "entryTime": "14:00",
+      "duration": 3,
+      "status": "Active",
+      "totalAmount": 180,
+      "createdAt": "2026-09-01T14:00:00.000Z"
+    },
+    {
+      "id": "PK003",
+      "userId": "2",
+      "userName": "Rahul Sharma",
+      "userPhone": "+91 9123456789",
+      "parkingId": "3",
+      "parkingName": "Metro Airport Terminal 2",
+      "slotId": "slot-3-C05",
+      "slotNumber": "C05",
+      "vehicleNumber": "AP28EF9012",
+      "vehicleType": "SUV",
+      "entryTime": "08:00",
+      "duration": 5,
+      "status": "Completed",
+      "totalAmount": 500,
+      "createdAt": "2026-08-31T08:00:00.000Z"
+    },
+    {
+      "id": "ZnM5Dn8UNS8",
+      "userId": "1",
+      "userName": "System AdminJohn Doe",
+      "userPhone": "+91 9876543210+91 9876543210",
+      "parkingId": "1",
+      "parkingName": "City Center Parking",
+      "slotId": "slot-1-A01",
+      "slotNumber": "A01",
+      "vehicleNumber": "TS09AB1234",
+      "vehicleType": "Car",
+      "entryTime": "10:30",
+      "duration": 2,
+      "totalAmount": 80,
+      "status": "Active",
+      "createdAt": "2026-09-01T09:49:27.821Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

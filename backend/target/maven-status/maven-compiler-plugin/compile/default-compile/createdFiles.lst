@@ -1,0 +1,13 @@
+com\careershield\model\ResumeAnalysis$ResumeAnalysisBuilder.class
+com\careershield\model\User$Role.class
+com\careershield\model\User$UserBuilder.class
+com\careershield\model\User.class
+com\careershield\controller\ScamDetectorController.class
+com\careershield\controller\ResumeController.class
+com\careershield\model\ScamReport$Status.class
+com\careershield\controller\JobController.class
+com\careershield\CareerShieldApplication.class
+com\careershield\model\ResumeAnalysis.class
+com\careershield\model\ScamReport.class
+com\careershield\controller\AuthController.class
+com\careershield\model\ScamReport$ScamReportBuilder.class
