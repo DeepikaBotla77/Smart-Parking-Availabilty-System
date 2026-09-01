@@ -41,20 +41,20 @@ const Footer = () => {
           <h4 className="footer-title">Contact & Support</h4>
           <ul className="footer-links" style={{ gap: '0.8rem' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <FaMapMarkerAlt style={{ color: '#3b82f6' }} /> Tech Park Towers, Floor 4, Hyderabad
+              <FaMapMarkerAlt style={{ color: '#ffffff' }} /> Tech Park Towers, Floor 4, Hyderabad
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <FaPhoneAlt style={{ color: '#3b82f6' }} /> +91 1800-PARK-EASE
+              <FaPhoneAlt style={{ color: '#ffffff' }} /> +91 1800-PARK-EASE
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <FaEnvelope style={{ color: '#3b82f6' }} /> support@parkease.com
+              <FaEnvelope style={{ color: '#ffffff' }} /> support@parkease.com
             </li>
           </ul>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} ParkEase Smart Parking System. Designed for portfolio & interview demonstration.</p>
+        <p>&copy; {new Date().getFullYear()} ParkEase Smart Parking System. Built with React 18, Spring Boot 3.2 & MySQL.</p>
       </div>
     </footer>
   );

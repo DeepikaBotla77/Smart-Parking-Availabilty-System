@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { FaMapMarkerAlt, FaClock, FaRupeeSign, FaArrowLeft, FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaArrowLeft, FaCheckCircle } from 'react-icons/fa';
 import { getParkingLot, getParkingSlots } from '../services/api';
 import { useParking } from '../context/ParkingContext';
 import { groupSlotsByFloor } from '../utils/slotHelpers';
@@ -69,7 +69,7 @@ const ParkingDetails = () => {
   if (error || !lot) {
     return (
       <div className="section" style={{ textAlign: 'center', padding: '4rem 1.5rem' }}>
-        <h2 style={{ color: '#ef4444', marginBottom: '1rem' }}>{error || 'Parking facility not found'}</h2>
+        <h2 style={{ color: '#dc2626', marginBottom: '1rem' }}>{error || 'Parking facility not found'}</h2>
         <Link to="/parking" className="btn btn-primary">
           <FaArrowLeft /> Back to Parking Locations
         </Link>
@@ -80,7 +80,7 @@ const ParkingDetails = () => {
   return (
     <div className="section">
       <div className="section-container">
-        <Link to="/parking" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '1.5rem', fontWeight: '600' }}>
+        <Link to="/parking" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '1.5rem', fontWeight: '600', color: '#000000' }}>
           <FaArrowLeft /> Back to Parking Locations
         </Link>
 
@@ -89,10 +89,10 @@ const ParkingDetails = () => {
           <div style={{ flex: '1', minWidth: '280px' }}>
             <h1 style={{ fontSize: '2.2rem', marginBottom: '0.4rem' }}>{lot.name}</h1>
             <p style={{ color: 'var(--slate-600)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '1rem', marginBottom: '0.8rem' }}>
-              <FaMapMarkerAlt style={{ color: '#ef4444' }} /> {lot.location}
+              <FaMapMarkerAlt style={{ color: '#dc2626' }} /> {lot.location}
             </p>
             <p style={{ color: 'var(--slate-600)', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.95rem' }}>
-              <FaClock style={{ color: 'var(--primary-color)' }} /> Operating Hours: <strong>{lot.openingHours || '24/7 Open'}</strong>
+              <FaClock style={{ color: '#000000' }} /> Operating Hours: <strong>{lot.openingHours || '24/7 Open'}</strong>
             </p>
             {lot.description && (
               <p style={{ color: 'var(--slate-600)', marginTop: '0.8rem', fontSize: '0.95rem', maxWidth: '650px' }}>
@@ -101,12 +101,12 @@ const ParkingDetails = () => {
             )}
           </div>
 
-          <div style={{ textAlign: 'right', background: 'var(--slate-100)', padding: '1.2rem 1.8rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--slate-200)' }}>
-            <span style={{ fontSize: '0.85rem', color: 'var(--slate-600)', display: 'block', fontWeight: '600' }}>HOURLY RATE</span>
-            <span style={{ fontSize: '2.2rem', fontWeight: '800', color: 'var(--primary-dark)' }}>
+          <div style={{ textAlign: 'right', background: '#000000', color: '#ffffff', padding: '1.4rem 2rem', borderRadius: 'var(--radius-md)', border: '1px solid #27272a' }}>
+            <span style={{ fontSize: '0.8rem', color: '#a1a1aa', display: 'block', fontWeight: '600', letterSpacing: '0.05em' }}>HOURLY RATE</span>
+            <span style={{ fontSize: '2.4rem', fontWeight: '900', color: '#ffffff' }}>
               ₹{lot.pricePerHour}
             </span>
-            <span style={{ fontSize: '0.85rem', color: 'var(--slate-600)', display: 'block' }}>per hour</span>
+            <span style={{ fontSize: '0.85rem', color: '#a1a1aa', display: 'block' }}>per hour</span>
           </div>
         </div>
 
@@ -120,36 +120,36 @@ const ParkingDetails = () => {
           }}
         >
           <div style={{ background: '#ffffff', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--slate-200)', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.8rem', color: 'var(--slate-400)', fontWeight: '700', textTransform: 'uppercase' }}>Total Capacity</span>
-            <h3 style={{ fontSize: '1.8rem', marginTop: '4px' }}>{totalCount} Slots</h3>
+            <span style={{ fontSize: '0.8rem', color: 'var(--slate-500)', fontWeight: '700', textTransform: 'uppercase' }}>Total Capacity</span>
+            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#000000' }}>{totalCount} Slots</h3>
           </div>
           <div style={{ background: 'var(--success-bg)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--success-border)', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.8rem', color: '#065f46', fontWeight: '700', textTransform: 'uppercase' }}>Available</span>
-            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#065f46' }}>{availableCount} Slots</h3>
+            <span style={{ fontSize: '0.8rem', color: '#15803d', fontWeight: '700', textTransform: 'uppercase' }}>Available</span>
+            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#15803d' }}>{availableCount} Slots</h3>
           </div>
           <div style={{ background: 'var(--danger-bg)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--danger-border)', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.8rem', color: '#991b1b', fontWeight: '700', textTransform: 'uppercase' }}>Occupied</span>
-            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#991b1b' }}>{occupiedCount} Slots</h3>
+            <span style={{ fontSize: '0.8rem', color: '#b91c1c', fontWeight: '700', textTransform: 'uppercase' }}>Occupied</span>
+            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#b91c1c' }}>{occupiedCount} Slots</h3>
           </div>
           <div style={{ background: 'var(--warning-bg)', padding: '1.2rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--warning-border)', textAlign: 'center' }}>
-            <span style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: '700', textTransform: 'uppercase' }}>Reserved</span>
-            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#92400e' }}>{reservedCount} Slots</h3>
+            <span style={{ fontSize: '0.8rem', color: '#b45309', fontWeight: '700', textTransform: 'uppercase' }}>Reserved</span>
+            <h3 style={{ fontSize: '1.8rem', marginTop: '4px', color: '#b45309' }}>{reservedCount} Slots</h3>
           </div>
         </div>
 
         {/* LEGEND */}
         <div className="slot-legend">
-          <span style={{ fontWeight: '700', color: 'var(--dark-navy)' }}>Slot Status Legend:</span>
+          <span style={{ fontWeight: '700', color: '#000000' }}>Slot Status Legend:</span>
           <div className="legend-item">
-            <span className="legend-dot" style={{ backgroundColor: '#10b981' }}></span>
-            <span>🟢 Available (Selectable)</span>
+            <span className="legend-dot" style={{ backgroundColor: '#16a34a' }}></span>
+            <span>🟢 Available (Click to select)</span>
           </div>
           <div className="legend-item">
-            <span className="legend-dot" style={{ backgroundColor: '#ef4444' }}></span>
+            <span className="legend-dot" style={{ backgroundColor: '#dc2626' }}></span>
             <span>🔴 Occupied (In Use)</span>
           </div>
           <div className="legend-item">
-            <span className="legend-dot" style={{ backgroundColor: '#f59e0b' }}></span>
+            <span className="legend-dot" style={{ backgroundColor: '#d97706' }}></span>
             <span>🟠 Reserved (Booked)</span>
           </div>
         </div>
@@ -175,12 +175,12 @@ const ParkingDetails = () => {
         {selectedSlot ? (
           <div className="selected-bar">
             <div>
-              <span style={{ fontSize: '0.85rem', color: 'var(--slate-400)', display: 'block' }}>SELECTED PARKING SLOT</span>
+              <span style={{ fontSize: '0.85rem', color: '#a1a1aa', display: 'block' }}>SELECTED PARKING SLOT</span>
               <h3 style={{ fontSize: '1.5rem', color: '#ffffff' }}>
                 Slot #{selectedSlot.slotNumber} ({selectedSlot.type}) - ₹{selectedSlot.price || lot.pricePerHour}/hr
               </h3>
             </div>
-            <button className="btn btn-primary" onClick={handleProceedReserve} style={{ padding: '0.8rem 2rem', fontSize: '1.05rem' }}>
+            <button className="btn btn-white" onClick={handleProceedReserve} style={{ padding: '0.8rem 2rem', fontSize: '1.05rem' }}>
               <FaCheckCircle /> Reserve This Slot
             </button>
           </div>

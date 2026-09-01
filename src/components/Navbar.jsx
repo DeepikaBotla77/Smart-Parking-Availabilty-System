@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { FaParking, FaUserCircle, FaBars, FaTimes, FaCar, FaSignOutAlt, FaUserShield } from 'react-icons/fa';
+import { FaParking, FaUserCircle, FaBars, FaTimes, FaSignOutAlt, FaUserShield } from 'react-icons/fa';
 import { useParking } from '../context/ParkingContext';
 
 const Navbar = () => {
@@ -73,8 +73,8 @@ const Navbar = () => {
           <div className="nav-auth">
             {user ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <span style={{ color: '#e2e8f0', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <FaUserCircle style={{ color: '#3b82f6', fontSize: '1.2rem' }} />
+                <span style={{ color: '#ffffff', fontSize: '0.9rem', display: 'flex', alignItems: 'center', gap: '6px', background: '#18181b', padding: '5px 12px', borderRadius: 'var(--radius-full)', border: '1px solid #3f3f46' }}>
+                  <FaUserCircle style={{ color: '#ffffff', fontSize: '1.1rem' }} />
                   {user.name}
                 </span>
                 <button
@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Link to="/login" className="btn btn-outline" onClick={closeMobileMenu}>
                   Login
                 </Link>
-                <Link to="/register" className="btn btn-primary" onClick={closeMobileMenu}>
+                <Link to="/register" className="btn btn-white" onClick={closeMobileMenu}>
                   Register
                 </Link>
               </>
